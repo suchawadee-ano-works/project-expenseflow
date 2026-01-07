@@ -15,7 +15,7 @@ function onLogin() {
 <template>
   <v-container style="max-width: 520px">
     <v-card class="pa-6" rounded="xl">
-      <v-card-title class="text-h6">Login (Demo)</v-card-title>
+      <v-card-title class="text-h6">Login test (Demo)</v-card-title>
 
       <v-card-text class="pt-4">
         <v-text-field v-model="name" label="Display name" />
