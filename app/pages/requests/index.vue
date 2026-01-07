@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div class="page-container">
     <div class="d-flex align-center justify-space-between mb-4">
       <div>
         <h1 class="text-h5 font-weight-medium">Requests</h1>
@@ -15,10 +15,13 @@
 
     <v-card rounded="xl">
       <v-card-text>
-        <div class="text-body-2 text-medium-emphasis">
+        <div class="page-title text-body-2 text-medium-emphasis">
           (Next) ใส่ตาราง list + filter ที่หน้านี้
         </div>
       </v-card-text>
     </v-card>
-  </v-container>
+  </div>
 </template>
+
+<script setup></script>
+<style scoped></style>

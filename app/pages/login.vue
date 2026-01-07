@@ -1,17 +1,3 @@
-<script setup lang="ts">
-definePageMeta({ layout: 'auth' });
-
-const auth = useAuthStore();
-
-const name = ref('Bubble');
-const role = ref<'requester' | 'approver' | 'auditor'>('requester');
-
-function onLogin() {
-  auth.login({ name: name.value, role: role.value });
-  navigateTo('/dashboard');
-}
-</script>
-
 <template>
   <v-container style="max-width: 520px">
     <v-card class="pa-6" rounded="xl">
@@ -37,3 +23,17 @@ function onLogin() {
     </v-card>
   </v-container>
 </template>
+
+<script setup lang="ts">
+definePageMeta({ layout: 'auth' });
+
+const auth = useAuthStore();
+
+const name = ref('Bubble');
+const role = ref<'requester' | 'approver' | 'auditor'>('requester');
+
+function onLogin() {
+  auth.login({ name: name.value, role: role.value });
+  navigateTo('/dashboard');
+}
+</script>
