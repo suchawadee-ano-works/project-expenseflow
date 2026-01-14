@@ -25,5 +25,12 @@ body {
 .content {
   background-color: #fff;
   min-height: calc(100vh - 48px);
-  padding: 100px;
+  // padding-inline: 220px;
+  // padding-block: 100px;
+  padding: 100px 50px;
+}
+@media (min-width: 1920px) {
+  .v-container {
+    max-width: 1400px !important;
+  }
 }

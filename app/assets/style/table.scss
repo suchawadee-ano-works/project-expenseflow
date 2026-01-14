@@ -1,0 +1,116 @@
+.styletable {
+  overflow: auto;
+  align-self: start;
+  width: 100%;
+  .table-layout table {
+    table-layout: auto !important;
+  }
+  table {
+    overflow: auto;
+    table-layout: fixed;
+    white-space: nowrap;
+    width: fit-content;
+    // border-collapse: separate; // ใช้ border แยกกัน
+    // border-spacing: 0; // ลบ
+    // white-space: nowrap;
+    // width: 100%;
+
+    th {
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      text-align: center;
+      border: 1px solid #e3e5e6;
+      background-color: var(--primary);
+      height: 32px !important;
+      padding: 8px !important;
+    }
+    th:first-child {
+      border-top-left-radius: 9px !important;
+    }
+    th:last-child {
+      border-top-right-radius: 9px !important;
+    }
+    td {
+      color: var(--text-gray);
+      border: 1px solid #e3e5e6;
+      height: auto !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      padding: 8px !important;
+
+      overflow-wrap: anywhere;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      div {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+    }
+    .row2 {
+      th {
+        border-radius: 0px !important;
+      }
+    }
+    .row3 {
+      th {
+        border-radius: 0px !important;
+      }
+    }
+    .row4 {
+      th {
+        border-radius: 0px !important;
+      }
+    }
+    .row1.row-bg th {
+      background-color: #870000 !important;
+    }
+    .row2.row-bg th {
+      background-color: #aa1411 !important;
+    }
+    .row3.row-bg th {
+      background-color: #da1316 !important;
+    }
+    .row4.row-bg th {
+      background-color: #ff0004 !important;
+    }
+    tfoot {
+      td {
+        background-color: rgba(250, 250, 250, 1);
+      }
+    }
+
+    tbody > tr:nth-child(even) {
+      background-color: #eef0f1;
+    }
+    tbody > tr:nth-child(odd) {
+      // background-color: #eef0f1;
+    }
+    tbody > tr:hover {
+      background: #e7e7e7 !important;
+    }
+
+    // .v-data-table
+    //   > .v-data-table__wrapper
+    //   tbody
+    //   tr:first-child:not
+    //   td:first-child:not(.detail-product) {
+    //   border-bottom-left-radius: 9px !important;
+    // }
+    // .v-data-table > .v-data-table__wrapper tbody tr:last-child td:last-child {
+    //   border-bottom-right-radius: 9px !important;
+    //   border-color: #cd020d !important;
+    // }
+  }
+  .v-btn--icon.v-size--default {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  .v-btn--icon.v-size--default .v-icon,
+  .v-btn--fab.v-size--default .v-icon {
+    height: 20px !important;
+    font-size: 20px !important;
+    width: 20px !important;
+  }
+}
